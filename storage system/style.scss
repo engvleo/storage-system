@@ -1,0 +1,126 @@
+@import 'var';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+body{
+    background: $black;
+  
+}
+.contener1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #title, 
+    #type, 
+    #price, 
+    #count{
+        margin: -3px;
+        width: 50%;
+        border:none;
+        border-radius: 15px;
+        padding: 5px;
+        background: $a2;
+        color:$black;
+        transition: 0.4s;
+        &:hover{
+            background: $black;
+            color:$a2;
+            border: 2px solid $a2;
+            transform: scaleX(1.1);
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    #btn-add{
+        border:none;
+        border-radius: 15px;
+        padding: 5px;
+        background: $a2;
+        color:$black;
+        width: 100px;
+        font-size: medium;
+        transition: 0.4s;
+        &:hover{
+            background: $black;
+            color:$a2;
+            border: 2px solid $a2;
+            transform: scaleX(1.1);
+        }
+    }
+}
+.contener2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+.newitem{
+    position: relative;
+    display: flex;
+    width: 60%;
+    height: 30%;
+    background: linear-gradient(120deg , $a1 ,$a2);
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+    transition: 0.4s;
+    justify-content: space-around;
+    align-items: center;
+
+    &:hover{
+        background: $black;
+        color:$a2;
+        border: 2px solid $a2;
+        transform: scaleX(1.1);
+
+    }
+    .trash-btn{
+        position: absolute;
+        right: 3px;
+        top: 2px;
+        background: $a1;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        border:none;
+        font-size: 1rem;
+        border-radius: 10px;
+        transition: 0.3s;
+        &:hover{
+            background: $black;
+            color: $a1;
+        }
+    }
+    .new-Title{
+
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-right: 40px;
+    }
+    .new-Type{
+        margin-left: 150px;
+        color: $a4;
+        &::before{
+            content: 'Type : ';
+        }
+    }
+    .new-Price{
+        &::after{
+            content: ' $';
+        }
+    }
+
+
+}
+}

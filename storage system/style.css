@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #161622;
+}
+
+.contener1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contener1 #title,
+.contener1 #type,
+.contener1 #price,
+.contener1 #count {
+  margin: -3px;
+  width: 50%;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  background: #e7d6cf;
+  color: #161622;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contener1 #title:hover,
+.contener1 #type:hover,
+.contener1 #price:hover,
+.contener1 #count:hover {
+  background: #161622;
+  color: #e7d6cf;
+  border: 2px solid #e7d6cf;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.contener1 #title:focus,
+.contener1 #type:focus,
+.contener1 #price:focus,
+.contener1 #count:focus {
+  outline: none;
+}
+
+.contener1 #btn-add {
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+  background: #e7d6cf;
+  color: #161622;
+  width: 100px;
+  font-size: medium;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contener1 #btn-add:hover {
+  background: #161622;
+  color: #e7d6cf;
+  border: 2px solid #e7d6cf;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.contener2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contener2 .newitem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 30%;
+  background: linear-gradient(120deg, #fbc390, #e7d6cf);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contener2 .newitem:hover {
+  background: #161622;
+  color: #e7d6cf;
+  border: 2px solid #e7d6cf;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.contener2 .newitem .trash-btn {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  background: #fbc390;
+  padding: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #161622;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contener2 .newitem .trash-btn:hover {
+  background: #161622;
+  color: #fbc390;
+}
+
+.contener2 .newitem .new-Title {
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  padding: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-right: 40px;
+}
+
+.contener2 .newitem .new-Type {
+  margin-left: 150px;
+  color: #3e6c7a;
+}
+
+.contener2 .newitem .new-Type::before {
+  content: 'Type : ';
+}
+
+.contener2 .newitem .new-Price::after {
+  content: ' $';
+}
+/*# sourceMappingURL=style.css.map */
